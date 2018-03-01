@@ -1,0 +1,23 @@
+<!--components/shareView.wxml-->
+<view class='background' wx:if="{{isShow}}">
+  <view class='foreground'>
+     <view class='title'>邀请好友助力</view>
+     <view class='splitLine'></view>
+     <view class='sharePlatform'>
+        <button class='plantform moments' bindtap='_clickShareViewMoments' plain style='border-color:white;color:#888888;'>
+          <image class='platform_img' src='../../images/shareView/platform_timeline.png'></image>
+          <text class='platform_text'>发送到朋友圈</text>
+        </button>
+        <button class='plantform friends' bindtap='_clickShareViewFriends' open-type="share" plain style='border-color:white;color:#888888;'>
+          <image class='platform_img' src='../../images/shareView/pltform_friend.png'></image>
+          <text class='platform_text'>发送给好友</text>
+        </button>
+        <button class='plantform faces' bindtap='_clickShareViewFaces' plain style='border-color:white;color:#888888;'>
+          <image class='platform_img' src='../../images/shareView/platform_face.png'></image>
+          <text class='platform_text'>面对面扫一扫</text>
+        </button>
+     </view>
+     <view class='splitBottomLine'></view>
+     <view class='cancel' bindtap='_clickShareViewCancel'>取消</view>
+  </view>
+</view>
